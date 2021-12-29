@@ -147,14 +147,14 @@ public class FabricService {
             
             long stt = System.currentTimeMillis();
             for (int i=0; i<1;i++) {
-				hftransaction("a","b"+i);
+				hftransaction("aa","bb"+i);
 			}
 			long stt1 = System.currentTimeMillis();
 			System.out.println("Modification");
 			System.out.println(stt1-stt);
 			
 			for (int i=0; i<1;i++) {
-				hfquery("a");
+				hfquery("aa");
 			}
 			long stt2 = System.currentTimeMillis();
             System.out.println("Query: ");
